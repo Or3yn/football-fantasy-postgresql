@@ -1,9 +1,10 @@
 # Dockerfile
-
 FROM postgres:latest
 
-ENV POSTGRES_DB=mydatabase
-ENV POSTGRES_USER=myuser
-ENV POSTGRES_PASSWORD=mypassword
+# Environment variables
+ENV POSTGRES_USER=your_user
+ENV POSTGRES_PASSWORD=your_password
+ENV POSTGRES_DB=football_db
 
-COPY initdb /docker-entrypoint-initdb.d/
+# Copy init script
+COPY init.sql /docker-entrypoint-initdb.d/
