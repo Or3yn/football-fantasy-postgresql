@@ -2,7 +2,7 @@ version: '3.1'
 
 services:
   db:
-    image: postgres:latest
+    build: .
     environment:
       POSTGRES_DB: football_players
       POSTGRES_USER: or3yn
