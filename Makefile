@@ -3,14 +3,14 @@
 .PHONY: all
 
 # Путь к файлу pgpass.conf
-PGPASS_PATH := $(HOME)/.pgpass
+PGPASS_PATH := C:\Users\bog01\AppData\Roaming\postgresql\pgpass.conf
 
 # Данные для подключения к базе данных
 HOSTNAME := localhost
 PORT := 5432
-DATABASE := postgres
-USERNAME := myuser
-PASSWORD := mypassword
+DATABASE := football_players
+USERNAME := or3yn
+PASSWORD := 12081974
 
 all: create_pgpass
 
